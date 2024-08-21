@@ -1,0 +1,98 @@
+@media screen and (max-width: 576px) {
+    .logo {
+        height: 35px;
+    }
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 577px) {
+    .logo {
+        height: 50px;
+    }
+
+}
+
+@media screen and (min-width: 993px) {
+    .logo {
+        height: 85px;
+    }
+
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+
+.tabs {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+
+.icon {
+    font-size: 24px;
+    margin: 0 4px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: row;
+        /* Maintain horizontal layout */
+        margin: 0;
+    }
+
+    .tabs li {
+        margin: 0 10px;
+        /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 6px;
+    }
+
+    .logo {
+        height: 35px;
+    }
+
+    .tabs li {
+        margin: 0 5px;
+        /* Adjust margin for smaller screens */
+        font-size: 10px;
+    }
+
+    .icon {
+        font-size: 10px;
+        margin: 0 4px;
+        padding: 2px;
+    }
+}

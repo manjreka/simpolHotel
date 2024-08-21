@@ -1,0 +1,123 @@
+.hotel-img {
+    background-image: url('https://res.cloudinary.com/dtzajnril/image/upload/v1724129022/heroimg_h8imak.jpg');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.text-container {
+    background-color: #B2B2B2;
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+    max-width: 100%;
+    font-size: 15px;
+
+}
+
+.card-cont {
+    list-style-type: none;
+}
+
+.heading-home {
+    background-image: linear-gradient(to right, #070707, #6E6E6E);
+    padding: 25px;
+    color: white;
+    margin: 25px;
+}
+
+.text {
+    margin: 45px;
+    text-align: center;
+}
+
+.heading {
+    margin: 15px;
+}
+
+@media screen and (max-width: 576px) {
+    .hotel-img {
+        background-size: cover;
+        object-fit: cover;
+        height: 55vh;
+    }
+
+    .text {
+        margin: 8px;
+    }
+
+    .card-cont {
+        display: flex;
+        flex-direction: column;
+        max-width: 578px;
+    }
+
+    .heading-home {
+        font-size: 18px;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 577px) {
+
+    .hotel-img {
+        background-size: cover;
+        min-height: 75vh;
+    }
+
+
+    .text {
+        margin: 10px;
+    }
+
+    .card-cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .heading-home {
+        font-size: 25px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .hotel-img {
+        background-size: cover;
+        min-height: 120vh;
+    }
+
+
+    .text {
+        margin: 15px;
+    }
+
+    .card-cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .heading-home {
+        font-size: 25px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+}
